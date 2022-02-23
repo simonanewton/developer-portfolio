@@ -2,7 +2,7 @@
 
 ## Description
 
-This application is a MERN Stack Application Template.
+This is a test repository.
 
 ## Table of Contents
 
@@ -38,7 +38,6 @@ npm start
 
 ## Credits
 
-* https://www.npmjs.com/package/mongoose
 * https://www.npmjs.com/package/express
 * https://www.npmjs.com/package/react
 
