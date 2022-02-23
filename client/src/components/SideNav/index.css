@@ -1,0 +1,16 @@
+.side-nav {
+    background-color: gray;
+    float: left;
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+hr {
+    border: 1px solid white;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar-text, a {
+    color: white !important;
+}
