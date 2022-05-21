@@ -1,8 +1,9 @@
 .side-nav {
-    background-color: gray;
-    float: left;
     height: 100%;
+    width: 50rem;
+    background-color: #565656;
     border-right: 1px solid white;
+    overflow: hidden;
 }
 
 hr {

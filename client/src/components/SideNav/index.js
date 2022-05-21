@@ -8,9 +8,11 @@ class SideNav extends Component {
             <Navbar className="p-4 flex-column side-nav">
                 <hr />
                 <Nav className="flex-column text-center">
-                    <Navbar.Text>Home</Navbar.Text>
-                    <Navbar.Text>About</Navbar.Text>
-                    <Navbar.Text>Portfolio</Navbar.Text>
+                    <Navbar.Text className="py-3">Home</Navbar.Text>
+                    <Navbar.Text className="py-3">About</Navbar.Text>
+                    <Navbar.Text className="py-3">Portfolio</Navbar.Text>
+                    <Navbar.Text className="py-3">Resume</Navbar.Text>
+                    <Navbar.Text className="py-3">Contact</Navbar.Text>
                 </Nav>
                 <hr />
                 <div className="text-center">

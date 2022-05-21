@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import ImageBlock from "../ImageBlock";
+import InfoBlock from "../InfoBlock";
+import "./index.css";
 
 class Body extends Component {
     render() {
         return (
-            <div className="p-4 my-auto text-center">
-                <h2>This is my website.</h2>
-            </div>
+            <main className="d-flex content">
+                <InfoBlock />
+                <ImageBlock />
+            </main>
         );
     }
 }
