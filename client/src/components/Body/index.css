@@ -2,8 +2,6 @@
     padding: 3rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .content {
-        flex-direction: column;
-    }
+.about {
+    max-height: 40rem;
 }

@@ -7,7 +7,7 @@ class InfoBlock extends Component {
         return (
             <Card className="mx-3 w-50 main">
                 <Card.Header className="px-5 py-4">
-                    <Card.Title className="m-0 info-card-title">About Me</Card.Title>
+                    <Card.Title className="m-0">About Me</Card.Title>
                 </Card.Header>
                 <Card.Body className="px-5 py-4">
                     <Card.Text>
@@ -25,7 +25,10 @@ class InfoBlock extends Component {
                         through my academic pursuits and personal interests. I am an avid consumer of competitive FPS games
                         like Apex Legends, Quake Champions, Diabotical, and Valorant. This is what led me to build my first
                         computer several years ago and since then I have significantly improved my talent at troubleshooting,
-                        network configuration, and operating system optimization. When I started at Hamilton College in 2017,
+                        network configuration, and operating system optimization.
+                    </Card.Text>
+                    <Card.Text>
+                        When I started at Hamilton College in 2017,
                         I took my first programming class in Python and I immediately knew I wanted to switch my major to
                         Computer Science and program for the rest of my life.
                     </Card.Text>

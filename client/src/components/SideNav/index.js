@@ -10,15 +10,17 @@ class SideNav extends Component {
                 <Nav className="flex-column text-center">
                     <Navbar.Text className="py-3">Home</Navbar.Text>
                     <Navbar.Text className="py-3">About</Navbar.Text>
+                    <Navbar.Text className="py-3">Learn</Navbar.Text>
                     <Navbar.Text className="py-3">Portfolio</Navbar.Text>
                     <Navbar.Text className="py-3">Resume</Navbar.Text>
                     <Navbar.Text className="py-3">Contact</Navbar.Text>
                 </Nav>
                 <hr />
                 <div className="text-center">
-                    <Nav.Link href="tel:+17064613684">Phone</Nav.Link>
-                    <Nav.Link href="mailto:simonanewton@gmail.com">Email</Nav.Link>
-                    <Nav.Link href="https://github.com/simonanewton">GitHub</Nav.Link>
+                    <Nav.Link href="tel:+17064613684" className="py-3">Phone</Nav.Link>
+                    <Nav.Link href="mailto:simonanewton@gmail.com" className="py-3" target={"_blank"}>Email</Nav.Link>
+                    <Nav.Link href="https://github.com/simonanewton" className="py-3" target={"_blank"}>GitHub</Nav.Link>
+                    <Nav.Link href="https://www.linkedin.com/in/simonanewtondev/" className="py-3" target={"_blank"}>LinkedIn</Nav.Link>
                 </div>
                 <hr />
             </Navbar>

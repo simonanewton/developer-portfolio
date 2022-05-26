@@ -5,7 +5,7 @@ import SideNav from "./components/SideNav";
 
 const App = () => {
 	return (
-		<div className="d-flex vh-100">
+		<div className="d-flex">
 			<SideNav />
 			<div>
 				<Header />

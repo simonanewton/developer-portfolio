@@ -6,12 +6,12 @@ class ImageBlock extends Component {
     render() {
         return (
             <Card className="mx-3 w-50 card-main">
-                <Card.Body className="p-0 d-flex justify-content-center">
+                <div className="p-0 h-100 d-flex justify-content-center">
                     <img
                         src={require("../../assets/images/profile.jpg")}
                         alt="Black and white photograph of Simon Newton kneeling with his dog Bluebelle."
                         id="profile-img" />
-                </Card.Body>
+                </div>
             </Card>
         );
     }
