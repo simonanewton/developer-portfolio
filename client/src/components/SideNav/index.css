@@ -1,7 +1,7 @@
 .side-nav {
     height: auto;
     width: 50rem;
-    background-color: #565656;
+    background-color: rgb(0, 0, 100);
     border-right: 1px solid white;
 }
 
