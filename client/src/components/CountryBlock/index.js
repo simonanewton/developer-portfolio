@@ -7,7 +7,7 @@ class CountryBlock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            apiKey: "",
+            apiKey: "AIzaSyDVyR2Hn-u75iylHKKpU7wZf1nkCMmDPqs",
             countryData: {
                 countryName: null,
                 countryFlag: null,
@@ -76,7 +76,7 @@ class CountryBlock extends Component {
                         </Col>
                         <Col>
                             <Row className="py-4 px-5 no-gutters align-items-center">
-                                <Col className="pr-4">
+                                <Col xs={5} className="pr-4">
                                     <div className="my-2 d-flex align-items-center">
                                         <h4 className="mr-3 m-0">{this.state.countryData.countryName}</h4>
                                         <img src={this.state.countryData.countryFlag} alt="Country Flag" width="40" height="25" />
