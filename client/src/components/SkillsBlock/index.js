@@ -10,7 +10,7 @@ class SkillsBlock extends Component {
                 {
                     logo: "html",
                     title: "HTML5",
-                    description: "HTML stands for Hyper Text Markup Language. It is the standard language for webpage , which tells the browser what content to display and where to display it. I personally like to refer to HTML as the 'skeleton' of a webpage because it acts like bones in a human body by providing structure and shape for further contents. HTML is typically the first code written for a webpage and is crucial to making it function properly for both users and browsers."
+                    description: "HTML stands for Hyper Text Markup Language. It is the standard language for webpages; it tells the browser what content to display and where to display it. I personally like to refer to HTML as the 'skeleton' of a webpage because it acts like bones in a human body by providing structure and shape for further contents. HTML is typically the first code written for a webpage and is crucial to making it function properly for both users and browsers."
                 },
                 {
                     logo: "css3",
@@ -43,7 +43,7 @@ class SkillsBlock extends Component {
                     description: "WordPress is a free, open-source Content Managment System (CMS) used for creating websites. It is one of the most widely used web development platforms today, as it is a much more developer-friendly way to build a new site from scratch and manage various types of visual content. Generally speaking, you don't need to know any programming to make a website with Wordpress, which eliminates a huge barrier-to-entry for many aspiring to create a site for their business or personal needs."
                 }
             ],
-            showDescription: false,
+            showDescription: true,
             currentTitle: null,
             currentDescription: null
         }
@@ -71,6 +71,10 @@ class SkillsBlock extends Component {
             squares.push(<SkillSquare key={language.logo} logo={language.logo} onClick={() => this.updateCurrentSkill(language)} />);
         });
         return squares;
+    }
+
+    componentDidMount = () => {
+        this.updateCurrentSkill(this.state.languages[0]);
     }
 
     render() {
