@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEarthAmericas, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import countriesArray from "../../assets/js/countries";
 import "./index.css";
 
@@ -61,8 +63,9 @@ class CountryBlock extends Component {
     render() {
         return (
             <Card className="mx-3 my-5 card-main">
-                <Card.Header>
+                <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Countries Traveled</Card.Title>
+                    <FontAwesomeIcon icon={faEarthAmericas} size="xl" className="ml-2" />
                 </Card.Header>
                 <Card.Body className="p-0">
                     <Row className="no-gutters">
@@ -104,6 +107,7 @@ class CountryBlock extends Component {
                                     </div>
                                     <div className="mt-3">
                                         <Button variant="primary" href={this.state.countryData.countryLink} target="_blank" >Learn More</Button>
+                                        <FontAwesomeIcon icon={faInfoCircle} className="ml-3 text-muted info-button" />
                                     </div>
                                 </Col>
                                 <Col className="d-flex align-items-center">

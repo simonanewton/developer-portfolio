@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Card, CloseButton, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import SkillSquare from "../SkillSquare";
 
 class SkillsBlock extends Component {
@@ -89,8 +91,9 @@ class SkillsBlock extends Component {
     render() {
         return (
             <Card className="mx-3 my-5 main">
-                <Card.Header>
+                <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Languages & Technologies</Card.Title>
+                    <FontAwesomeIcon icon={faCode} size="xl" className="ml-2" />
                 </Card.Header>
                 <Card.Body className="d-flex justify-content-center">
                     {this.renderSquares()}
@@ -102,7 +105,10 @@ class SkillsBlock extends Component {
                         <Card.Text>
                             {this.state.currentDescription}
                         </Card.Text>
-                        <Button variant="primary" href={this.state.currentLink} target="_blank">Learn More</Button>
+                        <Button variant="primary" href={this.state.currentLink} target="_blank">
+                            <span>Learn More</span>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" />
+                        </Button>
                     </Card.Body>
                 </Card.Footer>
             </Card>

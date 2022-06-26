@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStreetView } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
 class InfoBlock extends Component {
     render() {
         return (
             <Card className="mx-3 w-50 main">
-                <Card.Header className="px-5 py-4">
-                    <Card.Title className="m-0">About Me</Card.Title>
+                <Card.Header className="px-5 py-4 d-flex align-items-center">
+                        <Card.Title as={"h4"} className="m-0">About Me</Card.Title>
+                        <FontAwesomeIcon icon={faStreetView} size="xl" className="ml-2" />
                 </Card.Header>
                 <Card.Body className="px-5 py-4">
                     <Card.Text>

@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import InfoBlock from "../InfoBlock";
 import ImageBlock from "../ImageBlock";
 import CountryBlock from "../CountryBlock";
-import "./index.css";
 import SkillsBlock from "../SkillsBlock";
+import ProjectBlock from "../ProjectBlock";
+import "./index.css";
 
 
 class Body extends Component {
@@ -14,10 +15,11 @@ class Body extends Component {
                     <InfoBlock />
                     <ImageBlock />
                 </section>
-                <section>
+                <div>
                    <CountryBlock />
                    <SkillsBlock />
-                </section>
+                   <ProjectBlock />
+                </div>
             </main>
         );
     }
