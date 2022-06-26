@@ -9,7 +9,7 @@ class CountryBlock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            apiKey: "AIzaSyDVyR2Hn-u75iylHKKpU7wZf1nkCMmDPqs",
+            apiKey: "",
             countryData: {
                 countryName: null,
                 countryFlag: null,

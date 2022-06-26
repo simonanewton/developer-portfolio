@@ -22,11 +22,11 @@ class ProjectBlock extends Component {
                         <div className="d-flex justify-content-between align-items-center">
                             <Card.Title as={"h4"} className="m-0">Sudoku Solver</Card.Title>
                             <ListGroup horizontal>
-                                <ListGroup.Item action href="https://github.com/simonanewton/sudoku-solver-react" target="_blank" className="listgroup-link d-flex align-items-center">
+                                <ListGroup.Item variant="light" action href="https://github.com/simonanewton/sudoku-solver-react" target="_blank" className="listgroup-link d-flex align-items-center">
                                     <FontAwesomeIcon icon={faGithub} size="lg" className="pr-3" />
                                     <span>Repository</span>
                                 </ListGroup.Item>
-                                <ListGroup.Item action href="https://react-sudoku-solver-app.herokuapp.com" target="_blank" className="listgroup-link d-flex align-items-center">
+                                <ListGroup.Item variant="light" action href="https://react-sudoku-solver-app.herokuapp.com" target="_blank" className="listgroup-link d-flex align-items-center">
                                     <FontAwesomeIcon icon={faDesktop} className="pr-3" />
                                     <span>Website</span>
                                 </ListGroup.Item>
