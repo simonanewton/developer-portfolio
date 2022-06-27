@@ -1,0 +1,12 @@
+.card-main {
+    box-shadow: 5px 10px 20px #888888;
+}
+
+.listgroup-link {
+    color: inherit !important;
+}
+
+.active {
+    background-color: initial !important;
+    border-color: rgba(0, 0, 0, 0.125) !important;
+}

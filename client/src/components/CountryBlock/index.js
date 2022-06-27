@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Card, Row, Col, Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarthAmericas, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import countriesArray from "../../assets/js/countries";
@@ -56,6 +56,14 @@ class CountryBlock extends Component {
             });
     }
 
+    renderTooltip = (props) => {
+        return (
+            <Tooltip {...props} >
+                This information is provided by the API from this website.
+            </Tooltip>
+        );
+    }
+
     componentDidMount = () => {
         this.updateCountryData();
     }
@@ -84,7 +92,7 @@ class CountryBlock extends Component {
                                         <h4 className="mr-3 m-0">{this.state.countryData.countryName}</h4>
                                         <img src={this.state.countryData.countryFlag} alt="Country Flag" width="40" height="25" />
                                     </div>
-                                    <hr className="bg-dark ml-0" style={{ width: "50%" }} />
+                                    <hr className="bg-dark ml-0" style={{ width: "75%" }} />
                                     <div className="d-flex align-middle">
                                         <h5 className="mr-2 font-weight-bold text-nowrap">Captial City:</h5>
                                         <h5 className="d-inline-block">{this.state.countryData.countryCaptial}</h5>
@@ -107,7 +115,11 @@ class CountryBlock extends Component {
                                     </div>
                                     <div className="mt-3">
                                         <Button variant="primary" href={this.state.countryData.countryLink} target="_blank" >Learn More</Button>
-                                        <FontAwesomeIcon icon={faInfoCircle} className="ml-3 text-muted info-button" />
+                                        <OverlayTrigger placement="right" delay={{ show: 250, hide: 300 }} overlay={this.renderTooltip} >
+                                            <Card.Link href="https://restcountries.com/" target="_blank" >
+                                                <FontAwesomeIcon icon={faInfoCircle} className="ml-3 text-muted info-button" />
+                                            </Card.Link>
+                                        </OverlayTrigger>
                                     </div>
                                 </Col>
                                 <Col className="d-flex align-items-center">
