@@ -16,7 +16,9 @@ class ProjectBlock extends Component {
                 </Card.Header>
                 <Card.Body className="d-flex">
                     <div className="px-4 py-2">
-                        <Card.Img src={require("../../assets/images/sudoku-solver-react.png")} className="border" />
+                        <Card.Link href="https://react-sudoku-solver-app.herokuapp.com/" target="_blank" >
+                            <Card.Img src={require("../../assets/images/sudoku-solver-react.png")} className="border rounded project-img" />
+                        </Card.Link>
                     </div>
                     <div className="p-4">
                         <div className="d-flex justify-content-between align-items-center">

@@ -2,6 +2,11 @@
     box-shadow: 5px 10px 20px #888888;
 }
 
+.project-img:hover {
+    filter: brightness(95%);
+    cursor: pointer;
+}
+
 .listgroup-link {
     color: inherit !important;
 }
