@@ -5,6 +5,7 @@ import CountryBlock from "../CountryBlock";
 import SkillsBlock from "../SkillsBlock";
 import ProjectBlock from "../ProjectBlock";
 import ContactBlock from "../ContactBlock";
+import ResumeBlock from "../ResumeBlock";
 import "./index.css";
 
 
@@ -20,6 +21,7 @@ class Body extends Component {
                    <CountryBlock />
                    <SkillsBlock />
                    <ProjectBlock />
+                   <ResumeBlock />
                    <ContactBlock />
                 </div>
             </main>
