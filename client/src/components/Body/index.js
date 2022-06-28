@@ -12,8 +12,8 @@ import "./index.css";
 class Body extends Component {
     render() {
         return (
-            <main className="content">
-                <section className="d-flex about">
+            <main className="px-5 pb-5">
+                <section className="d-flex">
                     <InfoBlock />
                     <ImageBlock />
                 </section>

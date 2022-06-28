@@ -8,7 +8,7 @@ import "./index.css";
 class ContactBlock extends Component {
     render() {
         return (
-            <Card className="mx-3 my-5 card-main">
+            <Card className="mt-5 card-main">
                 <Card.Header className="d-flex justify-content-between">
                     <div className="invisible">
                         <ListGroup horizontal>

@@ -70,7 +70,7 @@ class CountryBlock extends Component {
 
     render() {
         return (
-            <Card className="mx-3 my-5 card-main">
+            <Card className="mt-5 card-main">
                 <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Countries Traveled</Card.Title>
                     <FontAwesomeIcon icon={faEarthAmericas} size="xl" className="ml-2" />

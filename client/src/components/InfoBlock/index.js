@@ -7,7 +7,7 @@ import "./index.css";
 class InfoBlock extends Component {
     render() {
         return (
-            <Card className="mx-3 w-50 main">
+            <Card className="mr-3 mt-5 w-50 main">
                 <Card.Header className="px-5 py-4 d-flex align-items-center">
                         <Card.Title as={"h4"} className="m-0">About Me</Card.Title>
                         <FontAwesomeIcon icon={faStreetView} size="xl" className="ml-2" />

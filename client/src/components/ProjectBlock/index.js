@@ -9,7 +9,7 @@ class ProjectBlock extends Component {
 
     render() {
         return (
-            <Card className="mx-3 my-5 card-main">
+            <Card className="mt-5 card-main">
                 <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Personal Projects</Card.Title>
                     <FontAwesomeIcon icon={faLaptopCode} size="xl" className="ml-2" />
