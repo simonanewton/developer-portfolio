@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CloseButton, Button } from "react-bootstrap";
+import { Card, Row, Collapse, CloseButton, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import SkillSquare from "../SkillSquare";
@@ -90,27 +90,39 @@ class SkillsBlock extends Component {
 
     render() {
         return (
-            <Card className="mt-5 card-main">
+            <Card>
                 <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Languages & Technologies</Card.Title>
-                    <FontAwesomeIcon icon={faCode} size="xl" className="ml-2" />
+                    <FontAwesomeIcon icon={faCode} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body className="d-flex justify-content-center">
-                    {this.renderSquares()}
+                <Card.Body>
+                    <Row className="justify-content-center">
+                        <SkillSquare key={this.state.languages[0].logo} logo={this.state.languages[0].logo} onClick={() => this.updateCurrentSkill(this.state.languages[0])} />
+                        <SkillSquare key={this.state.languages[1].logo} logo={this.state.languages[1].logo} onClick={() => this.updateCurrentSkill(this.state.languages[1])} />
+                        <SkillSquare key={this.state.languages[2].logo} logo={this.state.languages[2].logo} onClick={() => this.updateCurrentSkill(this.state.languages[2])} />
+                        <SkillSquare key={this.state.languages[3].logo} logo={this.state.languages[3].logo} onClick={() => this.updateCurrentSkill(this.state.languages[3])} />
+                        <SkillSquare key={this.state.languages[4].logo} logo={this.state.languages[4].logo} onClick={() => this.updateCurrentSkill(this.state.languages[4])} />
+                        <SkillSquare key={this.state.languages[5].logo} logo={this.state.languages[5].logo} onClick={() => this.updateCurrentSkill(this.state.languages[5])} />
+                        <SkillSquare key={this.state.languages[6].logo} logo={this.state.languages[6].logo} onClick={() => this.updateCurrentSkill(this.state.languages[6])} />
+                    </Row>
                 </Card.Body>
-                <Card.Footer className={this.state.showDescription ? "d-block" : "d-none"}>
-                    <CloseButton onClick={this.hideDescription} />
-                    <Card.Title as={"h4"} className="mt-3 mb-0 text-center">{this.state.currentTitle}</Card.Title>
-                    <Card.Body className="text-center w-75 mx-auto">
-                        <Card.Text>
-                            {this.state.currentDescription}
-                        </Card.Text>
-                        <Button variant="primary" href={this.state.currentLink} target="_blank">
-                            <span>Learn More</span>
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" />
-                        </Button>
-                    </Card.Body>
-                </Card.Footer>
+                <Collapse in={this.state.showDescription}>
+                    <Card.Footer>
+                        <div className="my-2 d-flex justify-content-end">
+                            <CloseButton onClick={this.hideDescription} />
+                        </div>
+                        <Card.Title as={"h4"} className="mt-0 mb-3 text-center">{this.state.currentTitle}</Card.Title>
+                        <Card.Body className="text-center mx-auto">
+                            <Card.Text className="px-5">
+                                {this.state.currentDescription}
+                            </Card.Text>
+                            <Button variant="primary" href={this.state.currentLink} target="_blank" className="mb-3">
+                                <span>Learn More</span>
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2" />
+                            </Button>
+                        </Card.Body>
+                    </Card.Footer>
+                </Collapse>
             </Card>
         );
     }

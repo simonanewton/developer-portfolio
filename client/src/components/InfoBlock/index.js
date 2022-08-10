@@ -7,12 +7,12 @@ import "./index.css";
 class InfoBlock extends Component {
     render() {
         return (
-            <Card className="mr-3 mt-5 w-50 main">
-                <Card.Header className="px-5 py-4 d-flex align-items-center">
+            <Card className="h-100">
+                <Card.Header className="py-4 d-flex align-items-center responsive-hpad">
                         <Card.Title as={"h4"} className="m-0">About Me</Card.Title>
-                        <FontAwesomeIcon icon={faStreetView} size="xl" className="ml-2" />
+                        <FontAwesomeIcon icon={faStreetView} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body className="px-5 py-4">
+                <Card.Body className="py-4 responsive-hpad">
                     <Card.Text>
                         Hi! I’m Simon and this is my personal website where you can find information and
                         links to my personal projects that I’ve worked on, my resume for viewing my professional

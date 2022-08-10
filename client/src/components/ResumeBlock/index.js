@@ -7,19 +7,18 @@ import "./index.css";
 class ResumeBlock extends Component {
     render() {
         return (
-            <Card className="mt-5 card-main">
+            <Card>
                 <Card.Header className="d-flex justify-content-center align-items-center">
                     <Card.Title as={"h4"} className="my-3 text-center">Resume</Card.Title>
-                    <FontAwesomeIcon icon={faCircleUser} size="xl" className="ml-2" />
+                    <FontAwesomeIcon icon={faCircleUser} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body className="p-0 d-flex justify-content-center">
                     <object
-                        data={require("../../assets/images/resume-temp.pdf") + "#view=FitV"}
-
+                        data={require("../../assets/images/newton-resume.pdf") + "#view=FitH"}
                         type="application/pdf"
-                        name="view"
+                        name="resume"
                         className="border-none rounded-bottom w-100 vh-100">
-                        If you can read this the pdf display has encountered an error.
+                        <p className="mt-4 p-4 text-center">If you can read this the pdf display component has encountered an error.</p>
                     </object>
                 </Card.Body>
             </Card>

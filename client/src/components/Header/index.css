@@ -3,6 +3,6 @@ header {
     color: white;
 }
 
-header {
+h1, h6 {
     text-shadow: 5px 10px 20px black;
 }

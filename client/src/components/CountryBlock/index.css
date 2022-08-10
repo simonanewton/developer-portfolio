@@ -1,5 +1,27 @@
-.card-main {
-    box-shadow: 5px 10px 20px #888888;
+@media only screen and (min-width: 992px) {
+    .left-col {
+        border-right: 1px solid gray;
+    }
+
+    .desktop-padding-0 {
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .left-col {
+        border-bottom: 1px solid gray;
+    }
+
+    .mobile-center {
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-none {
+        display: none;
+    }
 }
 
 .info-button {
