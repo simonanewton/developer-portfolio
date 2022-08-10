@@ -30,7 +30,7 @@ class SideNav extends Component {
 
     renderCanvas = () => {
         return (
-            <Offcanvas show={this.state.display} onHide={this.toggleCanvas} responsive="lg" scroll="true" >
+            <Offcanvas show={this.state.display} onHide={this.toggleCanvas} scroll="true" >
                 <Offcanvas.Header closeButton closeVariant="white" style={{ backgroundColor: "#434A54" }} className="" />
                 <Navbar expand="lg" className="p-0 flex-column justify-content-center vh-100" style={{ backgroundColor: "#434A54" }}>
                     <Navbar.Brand href="/" className="pb-4 me-0">
