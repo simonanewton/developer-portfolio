@@ -1,5 +1,5 @@
 .menu-toggle {
-    top: 2rem;
+    top: 2.5rem;
     left: 2rem;
 }
 
@@ -17,4 +17,16 @@
 
 .btn-close {
     margin-left: auto;
+}
+
+@media only screen and (max-width: 991px) {
+    .desktop-offcanvas {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mobile-offcanvas {
+        display: none !important;
+    }
 }

@@ -12,7 +12,7 @@ import "./index.css";
 class Body extends Component {
     render() {
         return (
-            <Container className="px-4 my-5">
+            <Container className="px-4 py-5">
                 <Row>
                     <Col xs={12} xl={6} className="mb-5">
                         <InfoBlock />

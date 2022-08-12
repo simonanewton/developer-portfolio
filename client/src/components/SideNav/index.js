@@ -14,26 +14,49 @@ class SideNav extends Component {
         }
     }
 
-    toggleCanvas = () => {
+    toggleOffcanvas = () => {
         this.setState({ display: !this.state.display });
     }
 
-    renderToggleButton = () => {
+    renderDesktopToggleButton = () => {
         return (
             <div className="position-absolute menu-toggle">
-                <Button onClick={this.toggleCanvas} className="p-3 text-white border border-white rounded menu-button">
-                    <FontAwesomeIcon icon={faBars} size="lg"/>
+                <Button onClick={this.toggleOffcanvas} className="text-white border-white menu-button">
+                    <FontAwesomeIcon icon={faBars} size="lg" />
                 </Button>
             </div>
         );
     }
 
-    renderCanvas = () => {
+    renderMobileOffcanvas = () => {
         return (
-            <Offcanvas show={this.state.display} onHide={this.toggleCanvas} scroll="true" >
-                <Offcanvas.Header closeButton closeVariant="white" style={{ backgroundColor: "#434A54" }} className="" />
-                <Navbar expand="lg" className="p-0 flex-column justify-content-center vh-100" style={{ backgroundColor: "#434A54" }}>
-                    <Navbar.Brand href="/" className="pb-4 me-0">
+            <Offcanvas show={this.state.display} onHide={this.toggleOffcanvas} scroll="true" placement="top" className="mobile-offcanvas" >
+                <Offcanvas.Header closeButton closeVariant="white" style={{ backgroundColor: "#434A54" }} />
+                <Navbar className="pt-0 pb-3 flex-column justify-content-center" style={{ backgroundColor: "#434A54" }}>
+                    <Nav defaultActiveKey="/" className="flex-column">
+                        <NavBlock name="Home" icon={faHouseChimney} link="" />
+                        <NavBlock name="About" icon={faStreetView} link="" />
+                        <NavBlock name="Learn" icon={faBookOpenReader} link="" />
+                        <NavBlock name="Portfolio" icon={faLaptopCode} link="" />
+                        <NavBlock name="Resume" icon={faFileLines} link="" />
+                        <NavBlock name="Contact" icon={faEnvelope} link="" />
+                        <hr className="mt-0 mb-3 border-white" />
+                        <NavBlock name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
+                        <NavBlock name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
+                        <NavBlock name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
+                        <NavBlock name="LinkedIn" icon={faLinkedin} link="https://www.linkedin.com/in/simonanewtondev/" />
+                    </Nav>
+                </Navbar>
+            </Offcanvas>
+        );
+    }
+
+    renderDesktopOffcanvas = () => {
+        return (
+            <Offcanvas show={this.state.display} onHide={this.toggleOffcanvas} scroll="true" placement="start" className="border-0 desktop-offcanvas" >
+                <Offcanvas.Header closeButton closeVariant="white" style={{ backgroundColor: "#434A54" }} />
+                <Navbar className="p-0 flex-column vh-100" style={{ backgroundColor: "#434A54" }}>
+                    <Navbar.Brand href="/" className="me-0">
                         <FontAwesomeIcon icon={faCode} size="xl" className="text-white" />
                     </Navbar.Brand>
                     <Nav defaultActiveKey="/" className="pt-4 flex-column">
@@ -43,6 +66,7 @@ class SideNav extends Component {
                         <NavBlock name="Portfolio" icon={faLaptopCode} link="" />
                         <NavBlock name="Resume" icon={faFileLines} link="" />
                         <NavBlock name="Contact" icon={faEnvelope} link="" />
+                        <hr className="mt-0 mb-3 border-white" />
                         <NavBlock name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
                         <NavBlock name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
                         <NavBlock name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
@@ -56,8 +80,9 @@ class SideNav extends Component {
     render() {
         return (
             <div>
-                {this.renderToggleButton()}
-                {this.renderCanvas()}
+                {this.renderDesktopToggleButton()}
+                {this.renderDesktopOffcanvas()}
+                {this.renderMobileOffcanvas()}
             </div>
         );
     }
