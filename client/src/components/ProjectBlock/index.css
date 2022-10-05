@@ -3,17 +3,6 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 991px) {
-    .mobile-center {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .mobile-vpad {
-        margin-top: 1rem !important;
-    }
-}
-
 .listgroup-link {
     color: inherit !important;
 }

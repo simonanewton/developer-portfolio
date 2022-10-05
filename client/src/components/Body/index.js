@@ -1,31 +1,23 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Stack } from "react-bootstrap";
+import { Container, Stack } from "react-bootstrap";
 import InfoBlock from "../InfoBlock";
 import ImageBlock from "../ImageBlock";
 import CountryBlock from "../CountryBlock";
 import SkillsBlock from "../SkillsBlock";
 import ProjectBlock from "../ProjectBlock";
 import ContactBlock from "../ContactBlock";
-import ResumeBlock from "../ResumeBlock";
 import "./index.css";
 
 class Body extends Component {
     render() {
         return (
-            <Container className="px-4 py-5">
-                <Row>
-                    <Col xs={12} xl={6} className="mb-5">
-                        <InfoBlock />
-                    </Col>
-                    <Col xs={12} xl={6} className="mb-5">
-                        <ImageBlock />
-                    </Col>
-                </Row>
+            <Container as={"main"} className="py-5">
                 <Stack gap={5}>
+                    <ImageBlock />
+                    <InfoBlock />
                     <CountryBlock />
                     <SkillsBlock />
                     <ProjectBlock />
-                    <ResumeBlock />
                     <ContactBlock />
                 </Stack>
             </Container>

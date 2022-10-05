@@ -2,56 +2,10 @@ import React, { Component } from "react";
 import { Card, ListGroup, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeCircleCheck, faCircleCheck, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faCircleCheck, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
 class ContactBlock extends Component {
-
-    renderHeader = () => {
-        return (
-            <div>
-                <div className="desktop">
-                    <div className="d-flex justify-content-between">
-                        <div className="invisible d-flex justify-content-center align-items-center">
-                            <ListGroup horizontal>
-                                <ListGroup.Item className="listgroup-link d-flex align-items-center">
-                                    <FontAwesomeIcon icon={faGithub} size="lg" className="pe-3" />
-                                    <span>GitHub</span>
-                                </ListGroup.Item>
-                                <ListGroup.Item className="listgroup-link d-flex align-items-center">
-                                    <FontAwesomeIcon icon={faLinkedin} size="lg" className="pe-3" />
-                                    <span>LinkedIn</span>
-                                </ListGroup.Item>
-                            </ListGroup>
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center">
-                            <Card.Title as={"h4"} className="my-3 text-center">Contact Me</Card.Title>
-                            <FontAwesomeIcon icon={faEnvelopeCircleCheck} size="xl" className="ms-2" />
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center">
-                            <ListGroup horizontal>
-                                <ListGroup.Item variant="light" action href="https://github.com/simonanewton" target="_blank" className="listgroup-link d-flex align-items-center">
-                                    <FontAwesomeIcon icon={faGithub} size="lg" className="pe-3" />
-                                    <span>GitHub</span>
-                                </ListGroup.Item>
-                                <ListGroup.Item variant="light" action href="https://www.linkedin.com/in/simonanewtondev" target="_blank" className="listgroup-link d-flex align-items-center">
-                                    <FontAwesomeIcon icon={faLinkedin} size="lg" className="pe-3" />
-                                    <span>LinkedIn</span>
-                                </ListGroup.Item>
-                            </ListGroup>
-                        </div>
-                    </div>
-                </div>
-                <div className="mobile">
-                    <div className="d-flex justify-content-center align-items-center" >
-                        <Card.Title as={"h4"} className="my-3 text-center">Contact Me</Card.Title>
-                        <FontAwesomeIcon icon={faEnvelopeCircleCheck} size="xl" className="ms-2" />
-                    </div>
-                </div>
-            </div>
-        );
-    }
-
     displayAlert = (value) => {
         if (value) {
             return (
@@ -90,10 +44,25 @@ class ContactBlock extends Component {
     render() {
         return (
             <Card>
-                <Card.Header className="">
-                    {this.renderHeader()}
+                <Card.Header className="py-4">
+                    <div className="d-flex justify-content-center align-items-center">
+                        <Card.Title as={"h4"} className="mb-0">Contact Me</Card.Title>
+                        <FontAwesomeIcon icon={faEnvelope} size="xl" className="ms-2" />
+                    </div>
                 </Card.Header>
                 <Card.Body>
+                    <div className="mb-1 d-flex justify-content-center align-items-center">
+                        <ListGroup horizontal>
+                            <ListGroup.Item variant="light" action href="https://github.com/simonanewton" target="_blank" className="listgroup-link d-flex align-items-center">
+                                <FontAwesomeIcon icon={faGithub} size="lg" className="pe-3" />
+                                <span>GitHub</span>
+                            </ListGroup.Item>
+                            <ListGroup.Item variant="light" action href="https://www.linkedin.com/in/simonanewtondev" target="_blank" className="listgroup-link d-flex align-items-center">
+                                <FontAwesomeIcon icon={faLinkedin} size="lg" className="pe-3" />
+                                <span>LinkedIn</span>
+                            </ListGroup.Item>
+                        </ListGroup>
+                    </div>
                     <Form className="py-2 mx-auto w-75">
                         <Row>
                             <Col xs={12} lg={6}>

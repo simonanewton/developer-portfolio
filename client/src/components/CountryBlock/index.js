@@ -8,19 +8,17 @@ import "./index.css";
 class CountryBlock extends Component {
     constructor(props) {
         super(props);
+        this.APIkey = process.env.REACT_APP_GMAPS_KEY;
         this.state = {
-            apiKey: process.env.REACT_APP_GMAPS_KEY,
-            countryData: {
-                countryName: null,
-                countryFlag: null,
-                countryCaptial: null,
-                countryRegion: null,
-                countryLanguages: null,
-                countryCurrencies: null,
-                countryPopulation: null,
-                countryLink: null
-            }
-        }
+            name: null,
+            flag: null,
+            captial: null,
+            region: null,
+            languages: null,
+            currencies: null,
+            population: null,
+            link: null
+        };
     }
 
     updateCountryData = () => {
@@ -35,24 +33,21 @@ class CountryBlock extends Component {
         }
 
         const toUnderscore = (name) => {
-            console.log(name.replace(/ /g,"_"));
-            return name.replace(/ /g,"_");
+            return name.replace(/ /g, "_");
         }
 
         fetch(`https://restcountries.com/v3.1/name/${randomCountry}`)
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    countryData: {
-                        countryName: data[0].name.common,
-                        countryFlag: Object.values(data[0].flags)[0],
-                        countryCaptial: data[0].capital[0],
-                        countryRegion: data[0].region,
-                        countryLanguages: (Object.values(data[0].languages)).join(", "),
-                        countryCurrencies: toUpperLetter(Object.values(Object.values(data[0].currencies)[0])[0]),
-                        countryPopulation: data[0].population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-                        countryLink: `https://en.wikipedia.org/wiki/${toUnderscore(data[0].name.common)}`
-                    }
+                    name: data[0].name.common,
+                    flag: Object.values(data[0].flags)[0],
+                    captial: data[0].capital[0],
+                    region: data[0].region,
+                    languages: (Object.values(data[0].languages)).join(", "),
+                    currencies: toUpperLetter(Object.values(Object.values(data[0].currencies)[0])[0]),
+                    population: data[0].population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+                    link: `https://en.wikipedia.org/wiki/${toUnderscore(data[0].name.common)}`
                 });
             })
             .catch(error => {
@@ -77,34 +72,33 @@ class CountryBlock extends Component {
         return (
             <Card>
                 <Card.Header className="d-flex justify-content-center align-items-center">
-                    <Card.Title as={"h4"} className="my-3 text-center">Countries Traveled</Card.Title>
+                    <Card.Title as={"h4"} className="my-3 text-center">Travel Experience</Card.Title>
                     <FontAwesomeIcon icon={faEarthAmericas} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body className="">
-                    <Row className="">
-                        <Col xs={12} lg={3} className="d-flex justify-content-center left-col">
+                <Card.Body className="p-0">
+                    <Row className="g-0">
+                        <Col lg={3} className="d-flex justify-content-center">
                             <div className="w-50 h-100 text-center d-flex">
-                                <div className="py-4 my-auto">
+                                <div className="pt-4 pt-lg-0 my-auto">
                                     <Button variant="success" size="lg" className="mb-4" onClick={this.updateCountryData}>Random Country</Button>
                                     <p className="m-0">I've been to over 30 countries in my life, click the button above to learn more about them!</p>
                                 </div>
                             </div>
                         </Col>
-                        <Col>
-                            <Row className="no-gutters align-items-center">
-                                <Col xs={12} lg={5} className="p-4">
-                                    <div className="py-2 d-flex align-items-center mobile-center">
-                                        <h4 className="pe-3 m-0">{this.state.countryData.countryName}</h4>
-                                        <img src={this.state.countryData.countryFlag} alt="Country Flag" width="40" height="25" />
+                        <Col className="p-4">
+                            <Row className="g-0 align-items-center">
+                                <Col lg={5} className="mb-4 mb-lg-0 pe-0 pe-lg-4">
+                                    <div className="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                        <h4 className="pe-3 m-0">{this.state.name}</h4>
+                                        <img src={this.state.flag} alt="Country Flag" width="40" height="25" />
                                     </div>
-                                    <hr className="ms-0 bg-dark w-75 mobile-none" />
-                                    <h5 className="pe-2"><strong>Captial City: </strong>{this.state.countryData.countryCaptial}</h5>
-                                    <h5 className="pe-2"><strong>Global Region: </strong>{this.state.countryData.countryRegion}</h5>
-                                    <h5 className="pe-2"><strong>Official Languages: </strong>{this.state.countryData.countryLanguages}</h5>
-                                    <h5 className="pe-2"><strong>Official Currency: </strong>{this.state.countryData.countryCurrencies}</h5>
-                                    <h5 className="pe-2"><strong>Population Size: </strong>{this.state.countryData.countryPopulation}</h5>
+                                    <h5 className="pe-2"><strong>Captial City: </strong>{this.state.captial}</h5>
+                                    <h5 className="pe-2"><strong>Global Region: </strong>{this.state.region}</h5>
+                                    <h5 className="pe-2"><strong>Official Languages: </strong>{this.state.languages}</h5>
+                                    <h5 className="pe-2"><strong>Official Currency: </strong>{this.state.currencies}</h5>
+                                    <h5 className="pe-2"><strong>Population Size: </strong>{this.state.population}</h5>
                                     <div className="mt-3">
-                                        <Button variant="primary" href={this.state.countryData.countryLink} target="_blank" >
+                                        <Button variant="primary" href={this.state.link} target="_blank" >
                                             <span>Learn More</span>
                                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2" />
                                         </Button>
@@ -115,16 +109,14 @@ class CountryBlock extends Component {
                                         </OverlayTrigger>
                                     </div>
                                 </Col>
-                                <Col xs={12} lg={7} className="p-4 d-flex align-items-center">
+                                <Col lg={7} className="px-0 d-flex align-items-center">
                                     <iframe
-                                        src={`https://www.google.com/maps/embed/v1/place?key=${this.state.apiKey}&q=${this.state.countryData.countryName}`}
+                                        src={`https://www.google.com/maps/embed/v1/place?key=${this.APIkey}&q=${this.state.name}`}
                                         title="Google Maps Embed"
-                                        width="100%"
-                                        height="300"
                                         frameBorder="0"
-                                        style={{ border: 0 }}
                                         aria-hidden="false"
                                         tabIndex="0"
+                                        id="google-maps"
                                     />
                                 </Col>
                             </Row>

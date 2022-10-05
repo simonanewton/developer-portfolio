@@ -1,5 +1,6 @@
 #profile-img {
-    width: auto;
-    height: 100%;
-    max-height: 600px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }

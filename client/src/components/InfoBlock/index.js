@@ -7,12 +7,12 @@ import "./index.css";
 class InfoBlock extends Component {
     render() {
         return (
-            <Card className="h-100">
-                <Card.Header className="py-4 d-flex align-items-center responsive-hpad">
+            <Card>
+                <Card.Header className="px-4 py-4 d-flex justify-content-center align-items-center">
                         <Card.Title as={"h4"} className="m-0">About Me</Card.Title>
                         <FontAwesomeIcon icon={faStreetView} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body className="py-4 responsive-hpad">
+                <Card.Body className="px-5 py-4 fs-5">
                     <Card.Text>
                         Hi! I’m Simon and this is my personal website where you can find information and
                         links to my personal projects that I’ve worked on, my resume for viewing my professional
@@ -29,11 +29,6 @@ class InfoBlock extends Component {
                         like Apex Legends, Quake Champions, Diabotical, and Valorant. This is what led me to build my first
                         computer several years ago and since then I have significantly improved my talent at troubleshooting,
                         network configuration, and operating system optimization.
-                    </Card.Text>
-                    <Card.Text>
-                        When I started at Hamilton College in 2017,
-                        I took my first programming class in Python and I immediately knew I wanted to switch my major to
-                        Computer Science and program for the rest of my life.
                     </Card.Text>
                 </Card.Body>
             </Card>

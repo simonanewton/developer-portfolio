@@ -9,7 +9,6 @@ class Header extends Component {
                 <SideNav />
                 <div className="p-4 mx-auto text-center text-white">
                     <h1>Simon Newton</h1>
-                    <h6>Junior Full Stack Web Developer</h6>
                 </div>
             </header>
 

@@ -44,12 +44,6 @@ class SkillsBlock extends Component {
                     title: "Node.js",
                     description: "Node.js is an asynchronous event-driven JavaScript runtime environment used for building web applications. This is the back-end of the website where JavaScript is used to tell the server how to operate, what files to use, and what content to generate. While Node.js only takes up a small portion of the code that is written to build a website, it is vitally important for turning your otherwise local probject into a public-facing website that users around the world can interact with.",
                     link: "https://www.hostinger.com/tutorials/what-is-node-js"
-                },
-                {
-                    logo: "wordpress",
-                    title: "WordPress",
-                    description: "WordPress is a free, open-source Content Managment System (CMS) used for creating websites. It is one of the most widely used web development platforms today, as it is a much more developer-friendly way to build a new site from scratch and manage various types of frontend and backend components. Generally speaking, you don't need to know any programming to make a website with Wordpress, which eliminates a huge barrier-to-entry for many aspiring to create a site for their business or personal needs.",
-                    link: "https://blog.hubspot.com/website/what-is-wordpress"
                 }
             ],
             showDescription: true,
@@ -92,7 +86,7 @@ class SkillsBlock extends Component {
         return (
             <Card>
                 <Card.Header className="d-flex justify-content-center align-items-center">
-                    <Card.Title as={"h4"} className="my-3 text-center">Languages & Technologies</Card.Title>
+                    <Card.Title as={"h4"} className="my-3 text-center">Languages & Libraries</Card.Title>
                     <FontAwesomeIcon icon={faCode} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body>
@@ -103,7 +97,6 @@ class SkillsBlock extends Component {
                         <SkillSquare key={this.state.languages[3].logo} logo={this.state.languages[3].logo} onClick={() => this.updateCurrentSkill(this.state.languages[3])} />
                         <SkillSquare key={this.state.languages[4].logo} logo={this.state.languages[4].logo} onClick={() => this.updateCurrentSkill(this.state.languages[4])} />
                         <SkillSquare key={this.state.languages[5].logo} logo={this.state.languages[5].logo} onClick={() => this.updateCurrentSkill(this.state.languages[5])} />
-                        <SkillSquare key={this.state.languages[6].logo} logo={this.state.languages[6].logo} onClick={() => this.updateCurrentSkill(this.state.languages[6])} />
                     </Row>
                 </Card.Body>
                 <Collapse in={this.state.showDescription}>
