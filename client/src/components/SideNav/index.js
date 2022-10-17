@@ -3,7 +3,7 @@ import { Offcanvas, Button, Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faCode, faHouseChimney, faStreetView, faBookOpenReader, faLaptopCode, faFileLines, faEnvelope, faSquarePhoneFlip, faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
-import NavBlock from "../NavBlock";
+import NavButton from "../NavButton";
 import "./index.css";
 
 class SideNav extends Component {
@@ -34,17 +34,17 @@ class SideNav extends Component {
                 <Offcanvas.Header closeButton closeVariant="white" style={{ backgroundColor: "#434A54" }} />
                 <Navbar className="pt-0 pb-3 flex-column justify-content-center" style={{ backgroundColor: "#434A54" }}>
                     <Nav defaultActiveKey="/" className="flex-column">
-                        <NavBlock name="Home" icon={faHouseChimney} link="" />
-                        <NavBlock name="About" icon={faStreetView} link="" />
-                        <NavBlock name="Learn" icon={faBookOpenReader} link="" />
-                        <NavBlock name="Portfolio" icon={faLaptopCode} link="" />
-                        <NavBlock name="Resume" icon={faFileLines} link="" />
-                        <NavBlock name="Contact" icon={faEnvelope} link="" />
+                        <NavButton name="Home" icon={faHouseChimney} link="" />
+                        <NavButton name="About" icon={faStreetView} link="" />
+                        <NavButton name="Learn" icon={faBookOpenReader} link="" />
+                        <NavButton name="Portfolio" icon={faLaptopCode} link="" />
+                        <NavButton name="Resume" icon={faFileLines} link="" />
+                        <NavButton name="Contact" icon={faEnvelope} link="" />
                         <hr className="mt-0 mb-3 border-white" />
-                        <NavBlock name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
-                        <NavBlock name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
-                        <NavBlock name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
-                        <NavBlock name="LinkedIn" icon={faLinkedin} link="https://www.linkedin.com/in/simonanewtondev/" />
+                        <NavButton name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
+                        <NavButton name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
+                        <NavButton name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
+                        <NavButton name="LinkedIn" icon={faLinkedin} link="https://www.linkedin.com/in/simonanewtondev/" />
                     </Nav>
                 </Navbar>
             </Offcanvas>
@@ -60,17 +60,17 @@ class SideNav extends Component {
                         <FontAwesomeIcon icon={faCode} size="xl" className="text-white" />
                     </Navbar.Brand>
                     <Nav defaultActiveKey="/" className="pt-4 flex-column">
-                        <NavBlock name="Home" icon={faHouseChimney} link="" />
-                        <NavBlock name="About" icon={faStreetView} link="" />
-                        <NavBlock name="Learn" icon={faBookOpenReader} link="" />
-                        <NavBlock name="Portfolio" icon={faLaptopCode} link="" />
-                        <NavBlock name="Resume" icon={faFileLines} link="" />
-                        <NavBlock name="Contact" icon={faEnvelope} link="" />
+                        <NavButton name="Home" icon={faHouseChimney} link="" />
+                        <NavButton name="About" icon={faStreetView} link="" />
+                        <NavButton name="Learn" icon={faBookOpenReader} link="" />
+                        <NavButton name="Portfolio" icon={faLaptopCode} link="" />
+                        <NavButton name="Resume" icon={faFileLines} link="" />
+                        <NavButton name="Contact" icon={faEnvelope} link="" />
                         <hr className="mt-0 mb-3 border-white" />
-                        <NavBlock name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
-                        <NavBlock name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
-                        <NavBlock name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
-                        <NavBlock name="LinkedIn" icon={faLinkedin} link="https://www.linkedin.com/in/simonanewtondev/" />
+                        <NavButton name="Phone" icon={faSquarePhoneFlip} link="tel:+17064613684" />
+                        <NavButton name="Email" icon={faSquareEnvelope} link="mailto:simonanewton@gmail.com" />
+                        <NavButton name="GitHub" icon={faGithubSquare} link="https://github.com/simonanewton" />
+                        <NavButton name="LinkedIn" icon={faLinkedin} link="https://www.linkedin.com/in/simonanewtondev/" />
                     </Nav>
                 </Navbar>
             </Offcanvas>

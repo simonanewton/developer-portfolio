@@ -3,7 +3,7 @@ import { Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
 
-class NavBlock extends Component {
+class NavButton extends Component {
     render() {
         return (
             <Nav.Item className="mb-3 border border-white rounded nav-button">
@@ -16,4 +16,4 @@ class NavBlock extends Component {
     }
 }
 
-export default NavBlock;
+export default NavButton;
