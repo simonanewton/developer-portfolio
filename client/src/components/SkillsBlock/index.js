@@ -46,11 +46,11 @@ class SkillsBlock extends Component {
                     link: "https://www.hostinger.com/tutorials/what-is-node-js"
                 }
             ],
-            showDescription: true,
+            showDescription: false,
             currentTitle: null,
             currentDescription: null,
             currentLink: null
-        }
+        };
     }
 
     showDescription = () => {
@@ -62,20 +62,16 @@ class SkillsBlock extends Component {
     }
 
     updateCurrentSkill = (language) => {
-        this.showDescription();
         this.setState({
             currentTitle: language.title,
             currentDescription: language.description,
-            currentLink: language.link
+            currentLink: language.link,
+            showDescription: true
         });
     }
 
     renderSquares = () => {
-        let squares = [];
-        this.state.languages.forEach(language => {
-            squares.push(<SkillSquare key={language.logo} logo={language.logo} onClick={() => this.updateCurrentSkill(language)} />);
-        });
-        return squares;
+        return this.state.languages.map(language => <SkillSquare key={language.logo} logo={language.logo} update={() => this.updateCurrentSkill(language)} />);
     }
 
     componentDidMount = () => {
@@ -86,17 +82,12 @@ class SkillsBlock extends Component {
         return (
             <Card>
                 <Card.Header className="d-flex justify-content-center align-items-center">
-                    <Card.Title as={"h4"} className="my-3 text-center">Languages & Libraries</Card.Title>
+                    <Card.Title as={"h4"} className="my-3 text-center">Languages & Technologies</Card.Title>
                     <FontAwesomeIcon icon={faCode} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body>
                     <Row className="justify-content-center">
-                        <SkillSquare key={this.state.languages[0].logo} logo={this.state.languages[0].logo} onClick={() => this.updateCurrentSkill(this.state.languages[0])} />
-                        <SkillSquare key={this.state.languages[1].logo} logo={this.state.languages[1].logo} onClick={() => this.updateCurrentSkill(this.state.languages[1])} />
-                        <SkillSquare key={this.state.languages[2].logo} logo={this.state.languages[2].logo} onClick={() => this.updateCurrentSkill(this.state.languages[2])} />
-                        <SkillSquare key={this.state.languages[3].logo} logo={this.state.languages[3].logo} onClick={() => this.updateCurrentSkill(this.state.languages[3])} />
-                        <SkillSquare key={this.state.languages[4].logo} logo={this.state.languages[4].logo} onClick={() => this.updateCurrentSkill(this.state.languages[4])} />
-                        <SkillSquare key={this.state.languages[5].logo} logo={this.state.languages[5].logo} onClick={() => this.updateCurrentSkill(this.state.languages[5])} />
+                        {this.renderSquares()}
                     </Row>
                 </Card.Body>
                 <Collapse in={this.state.showDescription}>
