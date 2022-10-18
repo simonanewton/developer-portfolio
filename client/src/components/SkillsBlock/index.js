@@ -3,6 +3,12 @@ import { Card, Row, Collapse, CloseButton, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import SkillSquare from "../SkillSquare";
+import HTML from "../../assets/images/html.png";
+import CSS from "../../assets/images/css.png";
+import JS from "../../assets/images/javascript.png";
+import BS5 from "../../assets/images/bootstrap.png";
+import REACT from "../../assets/images/react.png";
+import NJS from "../../assets/images/nodejs.png";
 
 class SkillsBlock extends Component {
     constructor(props) {
@@ -10,43 +16,43 @@ class SkillsBlock extends Component {
         this.state = {
             languages: [
                 {
-                    logo: "html",
+                    logo: HTML,
                     title: "HTML5",
                     description: "HTML stands for Hyper Text Markup Language. It is the standard language for webpages; it tells the browser what content to display and where to display it. I personally like to refer to HTML as the 'skeleton' of a webpage because it acts like bones in a human body by providing structure and shape for further contents. HTML is typically the first code written for a webpage and is crucial to making it function properly for both users and browsers.",
                     link: "https://www.hostinger.com/tutorials/what-is-html"
                 },
                 {
-                    logo: "css3",
+                    logo: CSS,
                     title: "CSS3",
                     description: "CSS stands for Casscading Style Sheet. It is responsible for what most of the webpage looks like and tells the browsers how to display certain elements. I like to refer to CSS as the 'eyes and ears' of a webpage because it is what gives a webpage its look, feel, and defining characteristics that differentiate it from other sites. While a majority of CSS is often superseded by libraries like Bootstrap like in this website, it is still a useful language for fine tune styling and polish.",
                     link: "https://www.hostinger.com/tutorials/what-is-css"
                 },
                 {
-                    logo: "js",
+                    logo: JS,
                     title: "JavaScript",
                     description: "JavaScript is the standard programming language for the web. It is what allows many elements and components to functional properly or even at all. JavaScript is commonly considered to be the most challenging and complicated language among the three primary languages used for web development (HTML5, CSS3, JavaScript). I like to refer to JavaScript as the 'brains' of a webpage because it's the primary tool used for controlling most actions a user can do on a website.",
                     link: "https://www.hostinger.com/tutorials/what-is-javascript"
                 },
                 {
-                    logo: "bootstrap",
+                    logo: BS5,
                     title: "Bootstrap 5",
                     description: "Bootstrap is one of the most popular CSS frameworks used on the web. It allows developers to easily create webpages that are responsive and mobile-accessible by having the appropriate styling rules built into each component to ensure consistent functionality and readability. It is not necessary to learn a CSS framework to become a web developer but it is a great asset for making web content that looks good and functions correctly for you and your users no matter what device.",
                     link: "https://www.hostinger.com/tutorials/what-is-bootstrap/"
                 },
                 {
-                    logo: "react",
+                    logo: REACT,
                     title: "React",
                     description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is difficult to learn, but allows developers considerable more visual control over their webpage.",
                     link: "https://www.hostinger.com/tutorials/what-is-react"
                 },
                 {
-                    logo: "nodejs",
+                    logo: NJS,
                     title: "Node.js",
                     description: "Node.js is an asynchronous event-driven JavaScript runtime environment used for building web applications. This is the back-end of the website where JavaScript is used to tell the server how to operate, what files to use, and what content to generate. While Node.js only takes up a small portion of the code that is written to build a website, it is vitally important for turning your otherwise local probject into a public-facing website that users around the world can interact with.",
                     link: "https://www.hostinger.com/tutorials/what-is-node-js"
                 }
             ],
-            showDescription: false,
+            showDescription: true,
             currentTitle: null,
             currentDescription: null,
             currentLink: null
@@ -85,8 +91,8 @@ class SkillsBlock extends Component {
                     <Card.Title as={"h4"} className="my-3 text-center">Languages & Technologies</Card.Title>
                     <FontAwesomeIcon icon={faCode} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body>
-                    <Row className="justify-content-center">
+                <Card.Body className="p-2 p-md-3">
+                    <Row className="g-0">
                         {this.renderSquares()}
                     </Row>
                 </Card.Body>
@@ -97,7 +103,7 @@ class SkillsBlock extends Component {
                         </div>
                         <Card.Title as={"h4"} className="mt-0 mb-3 text-center">{this.state.currentTitle}</Card.Title>
                         <Card.Body className="text-center mx-auto">
-                            <Card.Text className="px-5">
+                            <Card.Text className="px-2 px-md-5">
                                 {this.state.currentDescription}
                             </Card.Text>
                             <Button variant="primary" href={this.state.currentLink} target="_blank" className="mb-3">

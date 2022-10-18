@@ -14,11 +14,11 @@ class ProjectBlock extends Component {
                     <FontAwesomeIcon icon={faLaptopCode} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body>
-                    <Row className="p-2">
+                    <Row className="px-2">
                         <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 5 }} className="my-auto">
                             <Card.Img src={require("../../assets/images/sudoku-solver-react.png")} className="border rounded project-img" />
                         </Col>
-                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="p-4">
+                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="px-3 pb-3 pb-lg-0 my-auto">
                             <Row className="align-items-center mb-3">
                                 <Col xs={12} lg={5} xl={6}>
                                     <Card.Title as={"h4"} className="mb-3 mb-lg-0 text-center text-lg-start">Sudoku Solver</Card.Title>

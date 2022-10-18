@@ -1,6 +1,7 @@
-#profile-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+/* #profile-img {} */
+
+#profile-img img {
+    width: auto;
+    height: 100%;
+    max-height: 20rem;
 }

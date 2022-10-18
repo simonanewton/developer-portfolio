@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStreetView } from "@fortawesome/free-solid-svg-icons";
+import ProfileImg from "../../assets/images/profile-pic.jpg";
 import "./index.css";
 
 class InfoBlock extends Component {
@@ -12,15 +13,11 @@ class InfoBlock extends Component {
                     <Card.Title as={"h4"} className="m-0">About Me</Card.Title>
                     <FontAwesomeIcon icon={faStreetView} size="xl" className="ms-2" />
                 </Card.Header>
-                <Card.Body className="px-5 py-4 d-flex align-content-center">
-                    <div className="me-3">
-                        <img
-                            src={require("../../assets/images/profile.jpg")}
-                            alt="Simon kneeling with Bluebelle."
-                            className="mx-auto rounded"
-                            id="profile-img" />
+                <Card.Body className="d-block d-md-flex align-items-center">
+                    <div className="pe-0 pe-md-4 pb-3 pb-md-0 text-center" id="profile-img">
+                        <img src={ProfileImg} alt="Simon kneeling with Bluebelle." className="mx-auto rounded" />
                     </div>
-                    <div className="my-auto">
+                    <div>
                         <Card.Text>
                             Hi! I’m Simon and this is my personal website where you can find information and
                             links to my personal projects that I’ve worked on, my resume for viewing my professional
@@ -29,7 +26,7 @@ class InfoBlock extends Component {
                             professionals. I am extremely passionate and enthusiastic about working in the web development
                             industry and I’m ready to work with others to create compelling and useful web applications.
                         </Card.Text>
-                        <Card.Text>
+                        <Card.Text className="mb-0">
                             I have been interested in different kinds of technology ever since I was young - the first video
                             game I ever remember playing was the Ms. Pacman console at my friend’s house and I was immediately
                             entranced. Over the years I have improved my skills with computers and other technologies, namely
