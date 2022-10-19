@@ -1,8 +1,8 @@
-# Simon Newton Web Developer Portfolio
+# Developer Portfolio
 
 ## Description
 
-This web application serves as my current web portfolio where users can learn more about me, languages and technologies I use, personal projects I've built, and how to contanct me for more information. This site uses Node.js and Express.js to serve the backend, and React and Bootstrap 5 to build the frontend. If you want to learn more about how I built this website, you are welcome to clone this respository and test it on your own device. This website is still actively a work in progress, so if you experience any issues or have any comments about the project, please feel free to contact me.
+This web application serves as my current online portfolio where others can learn more about my background, languages and technologies I use to develop, personal projects I've recently worked on, and how to contanct me for more information. This site uses Node.js and Express.js to serve the backend, and React and Bootstrap to build the frontend. If you want to learn more about how I created this website, clone this respository and test it on your own device. This website is still actively a work in progress, so if you experience any issues or have any comments about the project, please feel free to contact me.
 
 <div align="center">
 <img src="./assets/site-preview.png" alt="Website Preview" />
@@ -44,13 +44,19 @@ npm start
 ## Credits
 
 External Media
-* https://www.flaticon.com/free-icons/coding
-* https://www.pexels.com/photo/photo-of-starry-night-1421903/
 * https://fontawesome.com/
+* https://flaticon.com/free-icons/coding
+* https://pexels.com/photo/photo-of-starry-night-1421903
 
 Development Resources
-* https://react-bootstrap.github.io/
 * https://reactjs.org/
+* https://getbootstrap.com/
+* https://react-bootstrap.github.io/
+
+Primary NPM Packages
+* https://npmjs.com/package/react
+* https://npmjs.com/package/bootstrap
+* https://npmjs.com/package/react-bootstrap
 * https://npmjs.com/package/express
 
 ## License
