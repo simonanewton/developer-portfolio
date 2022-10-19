@@ -3,6 +3,7 @@ import { Card, ListGroup, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLaptopCode, faDesktop } from "@fortawesome/free-solid-svg-icons";
+import SudokuSolverImg from "../../assets/images/sudoku-solver-react.png";
 import "./index.css";
 
 class ProjectBlock extends Component {
@@ -14,16 +15,16 @@ class ProjectBlock extends Component {
                     <FontAwesomeIcon icon={faLaptopCode} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body>
-                    <Row className="px-2">
-                        <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 5 }} className="my-auto">
-                            <Card.Img src={require("../../assets/images/sudoku-solver-react.png")} className="border rounded project-img" />
+                    <Row className="px-3">
+                        <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 5 }} className="p-3 p-lg-2 my-auto">
+                            <Card.Img src={SudokuSolverImg} className="project-img" />
                         </Col>
-                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="px-3 pb-3 pb-lg-0 my-auto">
-                            <Row className="align-items-center mb-3">
-                                <Col xs={12} lg={5} xl={6}>
-                                    <Card.Title as={"h4"} className="mb-3 mb-lg-0 text-center text-lg-start">Sudoku Solver</Card.Title>
+                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="px-3 px-xl-4 py-1 py-xl-4 my-auto">
+                            <Row className="g-0 mb-3 align-items-center">
+                                <Col xs={12} lg={5} xl={6} className="mb-3 mb-lg-0">
+                                    <Card.Title as={"h4"} className="mb-0 text-center text-lg-start">Sudoku Solver</Card.Title>
                                 </Col>
-                                <Col xs={11} s={6} lg={7} xl={6}>
+                                <Col xs={12} lg={7} xl={6}>
                                     <ListGroup horizontal="lg">
                                         <ListGroup.Item variant="light" action href="https://github.com/simonanewton/sudoku-solver-react" target="_blank" className="listgroup-link d-flex justify-content-center align-items-center">
                                             <FontAwesomeIcon icon={faGithub} size="lg" className="pe-3" />

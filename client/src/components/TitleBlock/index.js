@@ -5,7 +5,7 @@ class TitleBlock extends Component {
     render() {
         return (
             <div className="d-flex justify-content-center">
-                <div className="text-center text-white">
+                <div className="text-center text-white text-shadow">
                     <h1>Simon Newton</h1>
                     <h3>Junior Full Stack Web Developer</h3>
                     <h3>Georgia Tech Web Development Certificate</h3>

@@ -14,10 +14,10 @@ class InfoBlock extends Component {
                     <FontAwesomeIcon icon={faStreetView} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body className="d-block d-md-flex align-items-center">
-                    <div className="pe-0 pe-md-4 pb-3 pb-md-0 text-center" id="profile-img">
+                    <div className="px-0 px-md-3 pb-3 pb-md-0 text-center" id="profile-img">
                         <img src={ProfileImg} alt="Simon kneeling with Bluebelle." className="mx-auto rounded" />
                     </div>
-                    <div>
+                    <div className="px-0 px-md-2">
                         <Card.Text>
                             Hi! I’m Simon and this is my personal website where you can find information and
                             links to my personal projects that I’ve worked on, my resume for viewing my professional

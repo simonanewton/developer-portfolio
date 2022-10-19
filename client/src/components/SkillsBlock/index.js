@@ -101,7 +101,7 @@ class SkillsBlock extends Component {
                         <div className="my-2 d-flex justify-content-end">
                             <CloseButton onClick={this.hideDescription} />
                         </div>
-                        <Card.Title as={"h4"} className="mt-0 mb-3 text-center">{this.state.currentTitle}</Card.Title>
+                        <Card.Title as={"h4"} className="mb-0 text-center">{this.state.currentTitle}</Card.Title>
                         <Card.Body className="text-center mx-auto">
                             <Card.Text className="px-2 px-md-5">
                                 {this.state.currentDescription}

@@ -51,7 +51,7 @@ class ContactBlock extends Component {
                     </div>
                 </Card.Header>
                 <Card.Body>
-                    <div className="mb-1 d-flex justify-content-center align-items-center">
+                    <div className="my-1 d-flex justify-content-center align-items-center">
                         <ListGroup horizontal>
                             <ListGroup.Item variant="light" action href="https://github.com/simonanewton" target="_blank" className="listgroup-link d-flex align-items-center">
                                 <FontAwesomeIcon icon={faGithub} size="lg" className="pe-3" />
