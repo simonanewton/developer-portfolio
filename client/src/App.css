@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
 main {
     background: url("./assets/images/sky-bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
