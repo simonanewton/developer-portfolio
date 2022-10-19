@@ -9,7 +9,7 @@ class TitleBlock extends Component {
                     <h1>Simon Newton</h1>
                     <h4>Junior Full Stack Web Developer</h4>
                     <h4>Georgia Tech Web Development Certificate</h4>
-                    <h4>1+ year Experience</h4>
+                    <h4>1+ Year Experience</h4>
                 </div>
             </div>
         );

@@ -11,3 +11,8 @@
     background-color: initial !important;
     border-color: rgba(0, 0, 0, 0.125) !important;
 }
+
+.modal-content {
+    border: none !important;
+    background-color: transparent !important;
+}
