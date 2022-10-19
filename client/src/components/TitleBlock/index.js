@@ -7,9 +7,9 @@ class TitleBlock extends Component {
             <div className="d-flex justify-content-center">
                 <div className="text-center text-white text-shadow">
                     <h1>Simon Newton</h1>
-                    <h3>Junior Full Stack Web Developer</h3>
-                    <h3>Georgia Tech Web Development Certificate</h3>
-                    <h3>1+ year Experience</h3>
+                    <h4>Junior Full Stack Web Developer</h4>
+                    <h4>Georgia Tech Web Development Certificate</h4>
+                    <h4>1+ year Experience</h4>
                 </div>
             </div>
         );
