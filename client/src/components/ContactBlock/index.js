@@ -44,11 +44,9 @@ class ContactBlock extends Component {
     render() {
         return (
             <Card>
-                <Card.Header className="py-4">
-                    <div className="d-flex justify-content-center align-items-center">
-                        <Card.Title as={"h4"} className="mb-0">Contact Me</Card.Title>
-                        <FontAwesomeIcon icon={faEnvelope} size="xl" className="ms-2" />
-                    </div>
+                <Card.Header className="d-flex justify-content-center align-items-center">
+                    <Card.Title as={"h4"} className="my-3 text-center">Contact Me</Card.Title>
+                    <FontAwesomeIcon icon={faEnvelope} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body>
                     <div className="my-1 d-flex justify-content-center align-items-center">
@@ -94,10 +92,10 @@ class ContactBlock extends Component {
                         </Row>
                         <Form.Group controlId="formBasicSubject" className="mb-3">
                             <Form.Label>Subject Type</Form.Label>
-                            <Form.Control as="select" >
+                            <Form.Control as="select" className="text-muted">
                                 <option>Professional Inquiry</option>
-                                <option value="1">Website Comment</option>
-                                <option value="2">Other</option>
+                                <option value="1">Website Feedback</option>
+                                <option value="2">Miscellaneous</option>
                             </Form.Control>
                         </Form.Group>
                         <Form.Group controlId="formBasicMessage" className="mb-3">

@@ -32,14 +32,14 @@ class ProjectBlock extends Component {
                     <FontAwesomeIcon icon={faLaptopCode} size="xl" className="ms-2" />
                 </Card.Header>
                 <Card.Body className="px-3 py-0">
-                    <Row className="p-4 border-bottom">
+                    <Row className="p-3 border-bottom">
                         <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 5 }} className="p-3 p-lg-2 my-auto">
                             <Card.Img src={DevLogImg} onClick={this.toggleFirstModal} className="project-img" />
                             <Modal size="lg" centered show={this.state.showFirstModal} onHide={this.toggleFirstModal} className="project-modal">
                                 <Card.Img src={DevLogImg} className="rounded" />
                             </Modal>
                         </Col>
-                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="px-3 px-xl-4 py-1 py-xl-4 my-auto">
+                        <Col xs={{ order: 1, span: 12 }} lg={{ order: 2, span: 7 }} className="px-3 px-xl-3 py-1 py-xl-4 my-auto">
                             <Row className="g-0 mb-3 align-items-center">
                                 <Col xs={12} lg={5} xl={6} className="mb-3 mb-lg-0">
                                     <Card.Title as={"h4"} className="mb-0 text-center text-lg-start">Web Developer Log</Card.Title>
@@ -70,8 +70,8 @@ class ProjectBlock extends Component {
                             </Row>
                         </Col>
                     </Row>
-                    <Row className="p-4">
-                        <Col xs={12} lg={7} className="px-3 px-xl-4 py-1 py-xl-4 my-auto">
+                    <Row className="p-3">
+                        <Col xs={12} lg={7} className="px-3 px-xl-3 py-1 py-xl-4 my-auto">
                             <Row className="g-0 mb-3 align-items-center">
                                 <Col xs={12} lg={5} xl={6} className="mb-3 mb-lg-0">
                                     <Card.Title as={"h4"} className="mb-0 text-center text-lg-start">Sudoku Solver</Card.Title>
