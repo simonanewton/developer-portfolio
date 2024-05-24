@@ -3,15 +3,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"proxy": "http://localhost:3001/",
-	"devDependencies": {
-		"@babel/core": "7.22.5",
-		"@babel/eslint-parser": "7.22.5",
-		"@babel/plugin-proposal-private-property-in-object": "7.21.11",
-		"@babel/preset-env": "7.22.5"
-	},
-	"plugins": [
-		["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-	],
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.2.0",
 		"@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -24,7 +15,11 @@
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.3.0",
 		"react-scripts": "^5.0.1",
-		"web-vitals": "^3.0.3"
+		"web-vitals": "^3.0.3",
+		"@babel/core": "7.22.5",
+		"@babel/eslint-parser": "7.22.5",
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@babel/preset-env": "7.22.5"
 	},
 	"scripts": {
 		"start": "react-scripts start",
