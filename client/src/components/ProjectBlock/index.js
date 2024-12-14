@@ -35,7 +35,7 @@ class ProjectBlock extends Component {
                     <Row className="p-3 border-bottom">
                         <Col xs={{ order: 2, span: 12 }} lg={{ order: 1, span: 5 }} className="p-3 p-lg-2 my-auto">
                             <Card.Img src={DevLogImg} onClick={this.toggleFirstModal} className="project-img" />
-                            <Modal size="lg" centered show={this.state.showFirstModal} onHide={this.toggleFirstModal} className="project-modal">
+                            <Modal size="xl" centered show={this.state.showFirstModal} onHide={this.toggleFirstModal} className="project-modal">
                                 <Card.Img src={DevLogImg} className="rounded" />
                             </Modal>
                         </Col>
@@ -103,7 +103,7 @@ class ProjectBlock extends Component {
                         </Col>
                         <Col xs={12} lg={5} className="p-3 p-lg-2 my-auto">
                             <Card.Img src={SudokuSolverImg} onClick={this.toggleSecondModal} className="project-img" />
-                            <Modal size="lg" centered show={this.state.showSecondModal} onHide={this.toggleSecondModal} className="project-modal">
+                            <Modal size="xl" centered show={this.state.showSecondModal} onHide={this.toggleSecondModal} className="project-modal">
                                 <Card.Img src={SudokuSolverImg} className="rounded" />
                             </Modal>
                         </Col>

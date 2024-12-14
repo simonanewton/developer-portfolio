@@ -1,12 +1,13 @@
 import HTML from "../images/html.png";
 import CSS from "../images/css.png";
 import JS from "../images/javascript.png";
-import BS5 from "../images/bootstrap.png";
+import TYPSCRPT from "../images/typescript.png";
 import REACT from "../images/react.png";
-import NODEJS from "../images/nodejs.png";
 import NXTJS from "../images/nextjs.png";
+import BS5 from "../images/bootstrap.png";
+import NODEJS from "../images/nodejs.png";
 import WRDPRESS from "../images/wordpress.png";
-import SHPFY from "../images/shopify.png";
+
 
 const skills = [
     {
@@ -37,15 +38,14 @@ const skills = [
         link: "https://www.hostinger.com/tutorials/what-is-javascript"
     },
     {
-        logo: BS5,
-        title: "Bootstrap 5",
-        description: "Bootstrap is one of the most popular CSS frameworks used on the web. It allows developers to easily create webpages that are responsive and mobile-accessible by having the appropriate styling rules built into each component to ensure consistent functionality and readability. It is not necessary to learn a CSS framework to become a web developer but it is a great asset for making web content that looks good and functions correctly for you and your users no matter what device.",
-        type: "Front-End",
+        logo: TYPSCRPT,
+        title: "TypeScript",
+        description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is High to learn, but allows developers considerable more visual control over their webpage.",
+        type: "Back-End",
         difficulty: "Moderate",
         confidence: "High",
-        link: "https://www.hostinger.com/tutorials/what-is-bootstrap/"
-    },
-    {
+        link: "https://www.typescriptlang.org/"
+    },    {
         logo: REACT,
         title: "React",
         description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is difficult to learn, but allows developers considerable more visual control over their webpage.",
@@ -64,13 +64,22 @@ const skills = [
         link: "https://www.hostinger.com/tutorials/what-is-node-js"
     },
     {
+        logo: BS5,
+        title: "Bootstrap 5",
+        description: "Bootstrap is one of the most popular CSS frameworks used on the web. It allows developers to easily create webpages that are responsive and mobile-accessible by having the appropriate styling rules built into each component to ensure consistent functionality and readability. It is not necessary to learn a CSS framework to become a web developer but it is a great asset for making web content that looks good and functions correctly for you and your users no matter what device.",
+        type: "Front-End",
+        difficulty: "Moderate",
+        confidence: "Very High",
+        link: "https://www.hostinger.com/tutorials/what-is-bootstrap/"
+    },
+    {
         logo: NXTJS,
         title: "Next.js",
         description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is High to learn, but allows developers considerable more visual control over their webpage.",
         type: "Front-End, Back-End",
         difficulty: "Very High",
         confidence: "Low",
-        link: "https://www.hostinger.com/tutorials/what-is-react"
+        link: "https://nextjs.org/"
     },
     {
         logo: WRDPRESS,
@@ -79,16 +88,7 @@ const skills = [
         type: "Front-End",
         difficulty: "Moderate",
         confidence: "Moderate",
-        link: "https://www.hostinger.com/tutorials/what-is-react"
-    },
-    {
-        logo: SHPFY,
-        title: "Shopify",
-        description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is High to learn, but allows developers considerable more visual control over their webpage.",
-        type: "Front-End",
-        difficulty: "Easy",
-        confidence: "High",
-        link: "https://www.hostinger.com/tutorials/what-is-react"
+        link: "https://wordpress.com/"
     }
 ];
 

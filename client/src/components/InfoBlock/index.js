@@ -39,7 +39,7 @@ class InfoBlock extends Component {
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <span className="me-2 fw-bold">Title:</span>
-                                <span>Junior Full Stack Web Developer</span>
+                                <span>Full Stack Web Developer</span>
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <span className="me-2 fw-bold">Education:</span>
@@ -47,27 +47,16 @@ class InfoBlock extends Component {
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <span className="me-2 fw-bold">Experience:</span>
-                                <span>2+ Years Web Development Contractor</span>
+                                <span>2+ Years Web Developer Contractor</span>
                             </ListGroup.Item>
                             <ListGroup.Item className="py-2">
                                 <span className="me-2 fw-bold">Introduction:</span>
-                                <Card.Text className="lh-lg d-inline">
-                                    Junior full-stack web developer with over a year of experience as a web developer contractor with a
+                                <Card.Text className="lh-md d-inline">
+                                    Full-stack web developer with over two years of experience as a web developer contractor with a
                                     portfolio of well-designed, creative websites. Extremely passionate and enthusiastic about working in 
                                     the web development industry, and ready to collaborate with others to create compelling and useful web 
                                     applications. This is my personal developer profile where you can learn more about my background, 
                                     languages and technologies a part of my skillset, personal projects I've worked on, and how to contact me.
-                                </Card.Text>
-                            </ListGroup.Item>
-                            <ListGroup.Item>
-                                <span className="me-2 fw-bold">Background:</span>
-                                <Card.Text className="lh-lg d-inline">
-                                    I have been interested in different kinds of technology ever since I was young; the first video game
-                                    I remember playing was the Ms. Pacman console on a CRT TV! Over time I have improved my proficiency
-                                    with computers and other technologies, primarily through academic studies and personal interests. I am an
-                                    avid consumer of competitive FPS games like Apex Legends, Quake Champions, and Overwatch 2. This is what
-                                    led to building my first PC several years ago, and since then I have significantly improved my skills with
-                                    troubleshooting, network analysis, and operating system configuration.
                                 </Card.Text>
                             </ListGroup.Item>
                             <ListGroup.Item>
