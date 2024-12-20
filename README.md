@@ -14,7 +14,7 @@ This web application serves as my current online portfolio where others can lear
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [Credits](#credits)
+* [Resources](#resources)
 * [License](#license)
 
 ## Installation
@@ -37,11 +37,11 @@ npm start
     <img src="./assets/profile-picture-circle.png" alt="Simon Newton Profile Picture" width=250 />
     <h3><b>Simon Newton</b></h3>
     <hr align=left width=350 />
-    <p>Hey I'm Simon and I'm a Junior Full-Stack Web Developer!</p>
-    <a href="https://github.com/simonanewton" target="_blank">GitHub Profile</a> | <a href="https://www.linkedin.com/in/simon-newton-2a7440129/" target="_blank">LinkedIn Profile</a> | <a href="https://simonanewton.herokuapp.com/" target="_blank">Personal Website</a>
+    <p>Full-Stack Web Developer</p>
+    <a href="https://github.com/simonanewton" target="_blank">GitHub Profile</a> | <a href="https://www.linkedin.com/in/simonanewtondev/" target="_blank">LinkedIn Profile</a> | <a href="https://developer-portfolio-yqdu.onrender.com/" target="_blank">Personal Website</a>
 </div>
 
-## Credits
+## Resources
 
 External Media
 * https://fontawesome.com/

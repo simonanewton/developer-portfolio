@@ -77,8 +77,8 @@ const skills = [
         title: "Next.js",
         description: "React is a user interface (UI) JavaScript library created by Meta, the creators of Facebook. It allows developers to create UI elements efficiently, usually by creating templates for components that can render different data passed through it. React is great for websites that have a lot of iterative and interactive elements because it allows for easy duplication and manipulation of visual components. A user interface library like React is High to learn, but allows developers considerable more visual control over their webpage.",
         type: "Front-End, Back-End",
-        difficulty: "Very High",
-        confidence: "Low",
+        difficulty: "High",
+        confidence: "Moderate",
         link: "https://nextjs.org/"
     },
     {

@@ -55,18 +55,6 @@ class SkillsBlock extends Component {
                             <ListGroup className="p-2">
                                 <Card.Header className="text-center fw-bold bg-transparent border">{this.state.currentTitle}</Card.Header>
                                 <ListGroup.Item>
-                                    <h6 className="mb-0 me-2 fw-bold d-inline-block">Type:</h6>
-                                    <h6 className="mb-0 d-inline-block">{this.state.currentType}</h6>
-                                </ListGroup.Item>
-                                <ListGroup.Item>
-                                    <h6 className="mb-0 me-2 fw-bold d-inline-block">Difficulty:</h6>
-                                    <h6 className="mb-0 d-inline-block">{this.state.currentDifficulty}</h6>
-                                </ListGroup.Item>
-                                <ListGroup.Item>
-                                    <h6 className="mb-0 me-2 fw-bold d-inline-block">Confidence:</h6>
-                                    <h6 className="mb-0 d-inline-block">{this.state.currentConfidence}</h6>
-                                </ListGroup.Item>
-                                <ListGroup.Item>
                                     <h6 className="mb-0 me-2 fw-bold d-inline-block">Description:</h6>
                                     <p className="lh-base d-inline">{this.state.currentDescription}</p>
                                     <Button variant="outline-primary" href={this.state.currentLink} target="_blank" className="mx-auto mt-2 w-50 d-block">

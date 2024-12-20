@@ -47,16 +47,18 @@ class InfoBlock extends Component {
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <span className="me-2 fw-bold">Experience:</span>
-                                <span>2+ Years Web Developer Contractor</span>
+                                <span>2+ Years</span>
                             </ListGroup.Item>
                             <ListGroup.Item className="py-2">
                                 <span className="me-2 fw-bold">Introduction:</span>
                                 <Card.Text className="lh-md d-inline">
-                                    Full-stack web developer with over two years of experience as a web developer contractor with a
-                                    portfolio of well-designed, creative websites. Extremely passionate and enthusiastic about working in 
-                                    the web development industry, and ready to collaborate with others to create compelling and useful web 
-                                    applications. This is my personal developer profile where you can learn more about my background, 
-                                    languages and technologies a part of my skillset, personal projects I've worked on, and how to contact me.
+                                    Full-stack web developer with over two years of experience and a 
+                                    portfolio of well-designed, creative websites. Passionate and 
+                                    enthusiastic about interesting solutions to clients' needs, and 
+                                    eager to collaborate with others to create compelling and useful 
+                                    web applications. This is my personal developer profile where you 
+                                    can learn more about my background, technologies in my skill set, 
+                                    personal projects I've created, and how to contact me.
                                 </Card.Text>
                             </ListGroup.Item>
                             <ListGroup.Item>
